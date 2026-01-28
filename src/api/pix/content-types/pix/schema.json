@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pixes",
+  "info": {
+    "singularName": "pix",
+    "pluralName": "pixes",
+    "displayName": "pix"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pixKey": {
+      "type": "string"
+    }
+  }
+}
