@@ -1,0 +1,55 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configs",
+  "info": {
+    "singularName": "site-config",
+    "pluralName": "site-configs",
+    "displayName": "siteConfig"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primaryColor": {
+      "type": "string"
+    },
+    "secondaryColor": {
+      "type": "string"
+    },
+    "bgColor1": {
+      "type": "string"
+    },
+    "bgColor2": {
+      "type": "string"
+    },
+    "textPrimaryColor": {
+      "type": "string"
+    },
+    "textSecondaryColor": {
+      "type": "string"
+    },
+    "neutral": {
+      "type": "string"
+    },
+    "overlay": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "homePageImage": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}

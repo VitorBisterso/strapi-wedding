@@ -1,20 +1,26 @@
 {
-  "kind": "singleType",
-  "collectionName": "pixes",
+  "kind": "collectionType",
+  "collectionName": "gifts",
   "info": {
-    "singularName": "pix",
-    "pluralName": "pixes",
-    "displayName": "pix"
+    "singularName": "gift",
+    "pluralName": "gifts",
+    "displayName": "Gift"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "pixKey": {
+    "title": {
       "type": "string"
     },
-    "qrCode": {
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "string"
+    },
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -23,9 +29,6 @@
         "videos",
         "audios"
       ]
-    },
-    "bankInfo": {
-      "type": "string"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_general_infos",
+  "info": {
+    "singularName": "event-general-info",
+    "pluralName": "event-general-infos",
+    "displayName": "eventGeneralInfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "startingHours": {
+      "type": "time"
+    },
+    "endingHours": {
+      "type": "time"
+    }
+  }
+}

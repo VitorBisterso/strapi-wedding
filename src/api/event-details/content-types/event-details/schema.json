@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "event_detailsp",
+  "info": {
+    "singularName": "event-details",
+    "pluralName": "event-detailsp",
+    "displayName": "eventDetails"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "generalInfo": {
+      "type": "text"
+    },
+    "locationTips": {
+      "type": "text"
+    },
+    "locationDirectionImages": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
