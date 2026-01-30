@@ -11,7 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "location": {
+    "locationName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "stateAbbreviation": {
       "type": "string"
     },
     "date": {

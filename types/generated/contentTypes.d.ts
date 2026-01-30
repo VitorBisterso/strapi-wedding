@@ -473,6 +473,7 @@ export interface ApiEventGeneralInfoEventGeneralInfo
     draftAndPublish: true;
   };
   attributes: {
+    city: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -484,9 +485,11 @@ export interface ApiEventGeneralInfoEventGeneralInfo
       'api::event-general-info.event-general-info'
     > &
       Schema.Attribute.Private;
-    location: Schema.Attribute.String;
+    locationName: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     startingHours: Schema.Attribute.Time;
+    state: Schema.Attribute.String;
+    stateAbbreviation: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
