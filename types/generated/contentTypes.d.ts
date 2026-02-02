@@ -610,6 +610,32 @@ export interface ApiPixPix extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiRsvpRsvp extends Struct.CollectionTypeSchema {
+  collectionName: 'rsvps';
+  info: {
+    displayName: 'RSVP';
+    pluralName: 'rsvps';
+    singularName: 'rsvp';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    guestName: Schema.Attribute.String;
+    isGoing: Schema.Attribute.Boolean;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::rsvp.rsvp'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSiteConfigSiteConfig extends Struct.SingleTypeSchema {
   collectionName: 'site_configs';
   info: {
@@ -1163,6 +1189,7 @@ declare module '@strapi/strapi' {
       'api::message.message': ApiMessageMessage;
       'api::our-history.our-history': ApiOurHistoryOurHistory;
       'api::pix.pix': ApiPixPix;
+      'api::rsvp.rsvp': ApiRsvpRsvp;
       'api::site-config.site-config': ApiSiteConfigSiteConfig;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
